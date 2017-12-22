@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module-alias xmlns="urn:jboss:module:1.1"
+    name="org.elasticsearch.client.elasticsearch-rest-client" slot="${slot.simple.id}"
+    target-name="org.elasticsearch.client.elasticsearch-rest-client" target-slot="${version.elasticsearch}" />

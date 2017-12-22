@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.3" name="org.elasticsearch.client.elasticsearch-rest-client" slot="${version.elasticsearch}">
+    <properties>
+        <property name="jboss.api" value="private"/>
+    </properties>
+    <resources>
+        <resource-root path="elasticsearch-rest-client-${version.elasticsearch}.jar" />
+    </resources>
+    <dependencies>
+        <module name="org.apache.httpcomponents"/>
+        <module name="org.apache.commons.logging"/>
+        <module name="org.apache.commons.codec"/>
+    </dependencies>
+</module>

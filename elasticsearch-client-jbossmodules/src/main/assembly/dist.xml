@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+    <id>dist</id>
+    <formats>
+        <format>zip</format>
+        <format>dir</format> <!-- For ease of debugging only -->
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <baseDirectory>/</baseDirectory>
+
+    <files>
+        <file>
+            <source>${module.xml.basedir}/elasticsearch-rest-client/module.xml</source>
+            <outputDirectory>/org/elasticsearch/client/elasticsearch-rest-client/${version.elasticsearch}</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>${module.xml.basedir}/elasticsearch-rest-client-sniffer/module.xml</source>
+            <outputDirectory>/org/elasticsearch/client/elasticsearch-rest-client-sniffer/${version.elasticsearch}</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>${module.xml.basedir}/aliases/elasticsearch-rest-client/module.xml</source>
+            <outputDirectory>/org/elasticsearch/client/elasticsearch-rest-client/${slot.simple.id}</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>${module.xml.basedir}/aliases/elasticsearch-rest-client-sniffer/module.xml</source>
+            <outputDirectory>/org/elasticsearch/client/elasticsearch-rest-client-sniffer/${slot.simple.id}</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+    </files>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>false</useProjectArtifact>
+            <outputDirectory>org/elasticsearch/client/elasticsearch-rest-client/${version.elasticsearch}</outputDirectory>
+            <useTransitiveFiltering>false</useTransitiveFiltering>
+            <unpack>false</unpack>
+            <includes>
+                <include>org.elasticsearch.client:elasticsearch-rest-client</include>
+            </includes>
+        </dependencySet>
+
+        <dependencySet>
+            <useProjectArtifact>false</useProjectArtifact>
+            <outputDirectory>org/elasticsearch/client/elasticsearch-rest-client-sniffer/${version.elasticsearch}</outputDirectory>
+            <useTransitiveFiltering>false</useTransitiveFiltering>
+            <unpack>false</unpack>
+            <includes>
+                <include>org.elasticsearch.client:elasticsearch-rest-client-sniffer</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>
+
+</assembly>
