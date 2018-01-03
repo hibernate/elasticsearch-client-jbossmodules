@@ -2,7 +2,7 @@ Elasticsearch clients JBoss Module
 ==================================
 
 Packaging of [Elasticsearch Clients](https://github.com/elastic/elasticsearch/tree/master/client) as
-a [JBoss Module](https://docs.jboss.org/author/display/MODULES/Home).
+a [JBoss Module](https://jboss-modules.github.io/jboss-modules/manual/).
 
 Currently only includes the low-level REST client and its sniffer.
 
