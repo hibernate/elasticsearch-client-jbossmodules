@@ -6,8 +6,11 @@
     <groupId>org.hibernate.elasticsearch-client-jbossmodules</groupId>
     <artifactId>elasticsearch-client-jbossmodules-parent</artifactId>
     <name>Elasticsearch Client JBoss Modules parent</name>
+    <url>https://github.com/hibernate/elasticsearch-client-jbossmodules</url>
+    <description>Distribution of Elasticsearch Client packaged into JBoss Modules</description>
     <packaging>pom</packaging>
     <version>5.6.4-SNAPSHOT</version>
+    <inceptionYear>2017</inceptionYear>
 
     <properties>
         <version.elasticsearch>5.6.4</version.elasticsearch>
@@ -31,6 +34,30 @@
         <url>http://github.com/hibernate/elasticsearch-client-jbossmodules</url>
         <tag>HEAD</tag>
     </scm>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>Sanne</id>
+            <name>Sanne Grinovero</name>
+            <email>sanne@hibernate.org</email>
+            <organization>Red Hat, Inc.</organization>
+            <url>http://in.relation.to/sanne-grinovero/</url>
+        </developer>
+        <developer>
+            <id>yoann.rodiere</id>
+            <name>Yoann Rodière</name>
+            <email>yoann@hibernate.org</email>
+            <organization>Red Hat, Inc.</organization>
+            <url>http://in.relation.to/yoann-rodiere/</url>
+        </developer>
+    </developers>
 
     <mailingLists>
         <mailingList>
