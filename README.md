@@ -33,6 +33,13 @@ released copy of these modules.
 
 An example version could be `5.6.4.hibernate02` to contain Elasticsearch clients version `5.6.4`.
 
+## Download
+
+Released module ZIPs are available on [JBoss Nexus](https://repository.jboss.org/nexus/index.html#welcome)
+and Maven Central as `org.hibernate.elasticsearch-client-jbossmodules:elasticsearch-client-jbossmodules:<version>:dist:zip`.
+
+Here is a link to the [parent directory containing all releases](https://repository.jboss.org/nexus/content/groups/public/org/hibernate/elasticsearch-client-jbossmodules/elasticsearch-client-jbossmodules/).
+
 ## Usage
 
 Extract the produced module zip in the `/modules` directory of your WildFly distribution.
