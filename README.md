@@ -36,7 +36,7 @@ An example version could be `5.6.4.hibernate02` to contain Elasticsearch clients
 ## Download
 
 Released module ZIPs are available on [JBoss Nexus](https://repository.jboss.org/nexus/index.html#welcome)
-and Maven Central as `org.hibernate.elasticsearch-client-jbossmodules:elasticsearch-client-jbossmodules:<version>:dist:zip`.
+and Maven Central as `org.hibernate.elasticsearch-client-jbossmodules:elasticsearch-client-jbossmodules:<version>:zip:dist`.
 
 Here is a link to the [parent directory containing all releases](https://repository.jboss.org/nexus/content/groups/public/org/hibernate/elasticsearch-client-jbossmodules/elasticsearch-client-jbossmodules/).
 
