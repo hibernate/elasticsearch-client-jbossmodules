@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.hibernate.elasticsearch-client-jbossmodules</groupId>
         <artifactId>elasticsearch-client-jbossmodules-parent</artifactId>
-        <version>5.6.4-SNAPSHOT</version>
+        <version>5.6.4.hibernate01</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -162,7 +160,7 @@
                     <clusterName>elasticsearchClientJbossmodulesTestCluster</clusterName>
                 </configuration>
                 <executions>
-                    <execution >
+                    <execution>
                         <id>start-elasticsearch</id>
                         <phase>pre-integration-test</phase>
                         <goals>
