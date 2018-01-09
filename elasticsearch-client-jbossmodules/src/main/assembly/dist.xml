@@ -37,6 +37,7 @@
             <outputDirectory>org/elasticsearch/client/elasticsearch-rest-client/${version.elasticsearch}</outputDirectory>
             <useTransitiveFiltering>false</useTransitiveFiltering>
             <unpack>false</unpack>
+            <scope>provided</scope>
             <includes>
                 <include>org.elasticsearch.client:elasticsearch-rest-client</include>
             </includes>
@@ -47,6 +48,7 @@
             <outputDirectory>org/elasticsearch/client/elasticsearch-rest-client-sniffer/${version.elasticsearch}</outputDirectory>
             <useTransitiveFiltering>false</useTransitiveFiltering>
             <unpack>false</unpack>
+            <scope>provided</scope>
             <includes>
                 <include>org.elasticsearch.client:elasticsearch-rest-client-sniffer</include>
             </includes>
