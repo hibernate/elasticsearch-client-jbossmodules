@@ -15,6 +15,7 @@
         <version.elasticsearch>5.6.5</version.elasticsearch>
         <!-- This should match the major.minor of the Elasticsearch version, optionally revisioned with module micro fixes -->
         <slot.simple.id>5.6</slot.simple.id>
+        <slot.full.id>${version.elasticsearch}</slot.full.id>
         <version.wildfly>11.0.0.Final</version.wildfly>
         <!-- Integration test dependencies; typically need to match WildFly version -->
         <version.arquillian>1.1.11.Final</version.arquillian>
@@ -92,11 +93,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>elasticsearch-client-jbossmodules</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-client</artifactId>
                 <version>${version.elasticsearch}</version>
@@ -105,6 +101,19 @@
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-client-sniffer</artifactId>
                 <version>${version.elasticsearch}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly</groupId>
+                <artifactId>wildfly-feature-pack</artifactId>
+                <type>zip</type>
+                <version>${version.wildfly}</version>
+                <!-- We just need the ZIP, not the dependencies -->
+                <exclusions>
+                    <exclusion>
+                        <groupId>*</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -154,13 +163,24 @@
                         <requireMavenVersion>
                             <version>3.5.0</version>
                         </requireMavenVersion>
-                        <DependencyConvergence />
                     </rules>
                 </configuration>
             </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.wildfly.build</groupId>
+                    <artifactId>wildfly-feature-pack-build-maven-plugin</artifactId>
+                    <version>1.2.5.Final</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.wildfly.build</groupId>
+                    <artifactId>wildfly-server-provisioning-maven-plugin</artifactId>
+                    <!-- Do not use 1.2.4 nor 1.2.5 at the moment: regression!
+                        See http://lists.jboss.org/pipermail/wildfly-dev/2018-January/006325.html -->
+                    <version>1.2.0.Final</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>

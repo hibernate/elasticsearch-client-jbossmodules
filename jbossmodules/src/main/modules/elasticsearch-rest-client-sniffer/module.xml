@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module xmlns="urn:jboss:module:1.3" name="org.elasticsearch.client.elasticsearch-rest-client-sniffer" slot="${version.elasticsearch}">
+<module xmlns="urn:jboss:module:1.3" name="org.elasticsearch.client.elasticsearch-rest-client-sniffer" slot="${slot.full.id}">
     <properties>
         <property name="jboss.api" value="private"/>
     </properties>
     <resources>
-        <resource-root path="elasticsearch-rest-client-sniffer-${version.elasticsearch}.jar" />
+        <artifact name="${org.elasticsearch.client:elasticsearch-rest-client-sniffer}" />
     </resources>
     <dependencies>
-        <module name="org.elasticsearch.client.elasticsearch-rest-client" slot="${version.elasticsearch}"/>
+        <module name="org.elasticsearch.client.elasticsearch-rest-client" slot="${slot.full.id}"/>
         <module name="com.fasterxml.jackson.core.jackson-core"/>
         <module name="org.apache.httpcomponents"/>
         <module name="org.apache.commons.logging"/>
