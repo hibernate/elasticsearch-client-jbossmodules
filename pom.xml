@@ -8,11 +8,11 @@
     <url>https://github.com/hibernate/elasticsearch-client-jbossmodules</url>
     <description>Distribution of Elasticsearch Client packaged into JBoss Modules</description>
     <packaging>pom</packaging>
-    <version>5.6.4-SNAPSHOT</version>
+    <version>5.6.5-SNAPSHOT</version>
     <inceptionYear>2017</inceptionYear>
 
     <properties>
-        <version.elasticsearch>5.6.4</version.elasticsearch>
+        <version.elasticsearch>5.6.5</version.elasticsearch>
         <!-- This should match the major.minor of the Elasticsearch version, optionally revisioned with module micro fixes -->
         <slot.simple.id>5.6</slot.simple.id>
         <version.wildfly>11.0.0.Final</version.wildfly>
