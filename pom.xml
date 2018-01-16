@@ -205,8 +205,8 @@
     </build>
 
     <modules>
-        <module>elasticsearch-client-jbossmodules</module>
-        <module>elasticsearch-client-jbossmodules-integrationtests</module>
+        <module>jbossmodules</module>
+        <module>integrationtests</module>
     </modules>
 
 </project>
