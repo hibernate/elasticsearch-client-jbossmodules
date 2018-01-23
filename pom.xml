@@ -8,7 +8,7 @@
     <url>https://github.com/hibernate/elasticsearch-client-jbossmodules</url>
     <description>Distribution of Elasticsearch Client packaged into JBoss Modules</description>
     <packaging>pom</packaging>
-    <version>5.6.6.hibernate01</version>
+    <version>5.6.6-SNAPSHOT</version>
     <inceptionYear>2017</inceptionYear>
 
     <properties>
@@ -32,7 +32,7 @@
         <connection>scm:git:git://github.com/hibernate/elasticsearch-client-jbossmodules.git</connection>
         <developerConnection>scm:git:git@github.com:hibernate/elasticsearch-client-jbossmodules.git</developerConnection>
         <url>http://github.com/hibernate/elasticsearch-client-jbossmodules</url>
-        <tag>5.6.6.hibernate01</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
