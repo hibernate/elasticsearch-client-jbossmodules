@@ -10,5 +10,6 @@
         <module name="org.apache.httpcomponents"/>
         <module name="org.apache.commons.logging"/>
         <module name="org.apache.commons.codec"/>
+        <module name="javax.api"/>
     </dependencies>
 </module>
