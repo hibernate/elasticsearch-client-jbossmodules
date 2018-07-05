@@ -12,9 +12,9 @@
     <inceptionYear>2017</inceptionYear>
 
     <properties>
-        <version.elasticsearch>5.6.8</version.elasticsearch>
+        <version.elasticsearch>6.3.1</version.elasticsearch>
         <!-- This should match the major.minor of the Elasticsearch version, optionally revisioned with module micro fixes -->
-        <slot.simple.id>5.6</slot.simple.id>
+        <slot.simple.id>6.3</slot.simple.id>
         <slot.full.id>${version.elasticsearch}</slot.full.id>
         <version.wildfly>12.0.0.Final</version.wildfly>
         <!-- Integration test dependencies; typically need to match WildFly version -->
