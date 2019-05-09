@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.hibernate.elasticsearch-client-jbossmodules</groupId>
         <artifactId>elasticsearch-client-jbossmodules-parent</artifactId>
-        <version>5.6.8.hibernate02</version>
+        <version>5.6.8-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
